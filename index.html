@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/commonindex.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Document</title>
+</head>
+<style>
+
+</style>
+<body>
+  <div class="mouse_pointer"></div>
+    <section id="hero">
+
+          <div class="hero_bg_box"> 
+    
+    
+          </div>
+          <div class="main_nav">
+            <ul>
+              <li class="nav_conts nav_work"><a href="sub/works.html">work</a></li>
+             
+            </ul>
+          </div>
+          <div class="home_link">
+            <a href="index.html">
+              RYU<br>
+              HEE<br>
+              KYUNG
+            </a>
+          </div>
+          <div class="mail_link">
+            <a href="mailto:beals1129@naver.com">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 294.4003906 195.4003906" style="enable-background:new 0 0 294.4003906 195.4003906;" xml:space="preserve">
+                <g>
+                  <path class="st0" d="M0,0v195.4003906h294.4003906V0H0z M282.4003906,183.4003906H12V12h270.4003906V183.4003906z"></path>
+                  <polygon class="st0" points="221.0522461,71.7148438 213.1479492,62.6855469 145.7451172,121.6865234 79.902832,62.7304688
+                    71.8979492,71.6699219 145.6552734,137.7138672 	"></polygon>
+                </g>
+                </svg>
+            </a>
+          </div>
+    
+          <div id="slide_wrap">
+            <div class="slide_text">
+                <h3 >안녕하세요<br>
+                퍼블리셔<br>
+                <strong>류희경</strong>입니다.</h3>
+            </div>
+            <ul id="slide">
+                <li class="slide_contents slide_box"></li>
+                <li class="slide_contents slide_box"></li>
+                <li class="slide_contents slide_box"></li>
+                <li class="slide_contents slide_box"></li>
+              
+              
+              <li class="slide_contents"><a href="sub/detail_portfolio.html">
+                <img class="mouse_img_pointer" src="img/slide1.PNG" alt="" />
+                <p>2021 Portfolio</p></a>
+              </li>
+              <li class="slide_contents"><a href="sub/detail_ferrari.html">
+                <img class="mouse_img_pointer" src="img/thumbnail_ferrari.gif" alt="" />
+                <p>Ferrari</p></a>
+              </li>
+              <li class="slide_contents"><a href="sub/detail_wadiz.html">
+                <img class="mouse_img_pointer" src="img/wadiz_main_2.png" alt="" />
+                <p>Wadiz</p></a>
+              </li>
+            
+              <li class="slide_contents"><a href="sub/detail_kinfolk.html">
+                <img class="mouse_img_pointer" src="img/kinfolk-main.png" alt="" />
+                <p>Kinfolk</p></a>
+              </li>
+              
+              <!-- <li class="slide_contents view_more_img">
+                <img class="mouse_img_pointer" src="img/new_16-2.gif" alt="" />
+                <p>View more</p>
+              </li> -->
+            </ul>
+          </div>
+    
+
+    </section>
+</body>
+<script type="text/javascript" src="js/index.js"></script>
+<script>
+    var mainSlide = document.getElementById('slide');
+    window.onscroll = function() {
+    // console.log(window.scrollY);
+    var scrollYSlide = window.scrollY;
+    mainSlide.style.left=-scrollYSlide+"px";
+
+
+    if (scrollYSlide > 110){
+        document.getElementsByClassName('slide_text')[0].style="animation:fadeIn 1s forwards"
+    }
+
+    if (scrollYSlide < 110){
+        document.getElementsByClassName('slide_text')[0].style="animation:fadeOut 1s forwards"
+    }
+};
+</script>
+</html>
