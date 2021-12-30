@@ -25,7 +25,7 @@
   width: 2000px;
   position: fixed; top: 50%; left: 0;}
 .slide_box{width:1000px; height: 100%;}
-.main_nav { z-index:10; }
+.main_nav { z-index:10;}
 .slide_contents {
   color: var(--white-color);
   font-size: 24px;
@@ -37,6 +37,7 @@
 
 .slide_contents img {
   height: 450px;
+  box-shadow: 5px 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .view_more_img img {
